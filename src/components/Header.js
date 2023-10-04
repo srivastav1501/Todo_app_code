@@ -19,7 +19,7 @@ function Header({ setIsBoardModalOpen, isBoardModalOpen }) {
   const [isTaskModalOpen, setIsTaskModalOpen] = useState(false);
 
   const dispatch = useDispatch();
-  
+
   const boards = useSelector((state) => state.boards);
   const board = boards.find((board) => board.isActive);
 
@@ -55,7 +55,7 @@ function Header({ setIsBoardModalOpen, isBoardModalOpen }) {
         <div className=" flex items-center space-x-2  md:space-x-4">
           <img src={Logo} alt=" Logo " className=" h-6 w-6" />
           <h3 className=" md:text-4xl  hidden md:inline-block font-bold  font-sans">
-            kanban
+            Todo App
           </h3>
           <div className=" flex items-center ">
             <h3 className=" truncate max-w-[200px] md:text-2xl text-xl font-bold md:ml-20 font-sans  ">
